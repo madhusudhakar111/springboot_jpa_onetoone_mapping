@@ -1,0 +1,6 @@
+
+CREATE TABLE address (a_id INT AUTO_INCREMENT PRIMARY KEY, street VARCHAR(255), city VARCHAR(100));
+
+CREATE TABLE user(id INT AUTO_INCREMENT PRIMARY KEY, user_name VARCHAR(100),  address_id INT,
+    FOREIGN KEY (address_id) REFERENCES address(a_id)
+);
