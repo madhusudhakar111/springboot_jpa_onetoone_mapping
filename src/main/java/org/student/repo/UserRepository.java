@@ -9,9 +9,6 @@ import org.student.entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    // JPQL query to load only User without Address (Lazy loading)
-    @Query("SELECT u FROM User u WHERE u.id = :userId")
-    User findUserById(@Param("userId") Long userId);
 
 
 }

@@ -24,15 +24,7 @@ public class UserController {
         }
     }
 
-    @GetMapping("/getuseradress")
-    public ResponseEntity<?> save(@RequestParam Long userId) {
-        try {
-            User user = userService.findUserById(userId);
-            return ResponseEntity.ok(user);
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failure" + e.getMessage());
-        }
-    }
+   
 
 
 }

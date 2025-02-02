@@ -7,5 +7,4 @@ public interface UserService {
 
     void save(UserRequest userRequest);
 
-    User findUserById(Long userId);
 }
